@@ -1,0 +1,3 @@
+@mixin animated($duree:0.2s) {
+    transition: all $duree ease 0s;
+}

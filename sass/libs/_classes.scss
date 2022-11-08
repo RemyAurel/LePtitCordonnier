@@ -1,0 +1,179 @@
+.h1 {
+    font-family: $barlow;
+    font-weight: 600;
+    font-size: 2.8rem;
+    color: $white;
+    @media (min-width: $md-width) {
+        font-size: 5.5rem;
+    }
+}
+.h2 {
+    text-align: center;
+    font-family: $playfair;
+    font-weight: 600;
+    display: block;
+    color: $black;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    @media (min-width: $md-width) {
+        padding-bottom: 22px;
+        margin-bottom: 40px;
+        font-size: 3.8rem;
+    }
+    &.with-line {
+        &:after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            height: 3px;
+            width: 47px;
+            background: $green;
+            @media (min-width: $md-width) {
+                height: 6px;
+            }
+        }
+    }
+}
+.h3-spe {
+    text-align: center;
+    font-family: $playfair;
+    font-weight: 600;
+    display: block;
+    color: $black;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    @media (min-width: $md-width) {
+        padding-bottom: 22px;
+        margin-bottom: 40px;
+        font-size: 3.4rem;
+    }
+    &.with-line {
+        &:after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            height: 3px;
+            width: 47px;
+            background: $green;
+            @media (min-width: $md-width) {
+                height: 6px;
+            }
+        }
+    }
+}
+.h3 {
+    font-family: $playfair;
+    font-weight: 600;
+    font-size: 2rem;
+    color: $black;
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    @media (min-width: $md-width) {
+        margin-bottom: 30px;
+        text-align: left;
+        font-size: 3.4rem;
+    }
+    &.with-line {
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            height: 3px;
+            width: 47px;
+            transform: translateX(-50%);
+            left: 50%;
+            background: $green;
+            @media (min-width: $md-width) {
+                height: 6px;
+                left: 0;
+                transform: none;
+            }
+        }
+    }
+}
+.h4 {
+    font-family: $barlow;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: $black;
+    position: relative;
+    text-transform: uppercase;
+    padding-bottom: 7px;
+    margin-bottom: 18px;
+    text-align: left;
+    @media (min-width: $md-width) {
+        margin-bottom: 25px;
+        padding-bottom: 12px;
+        font-size: 1.4rem;
+    }
+    &.with-line {
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 3px;
+            width: 43px;
+            background: $green;
+            @media (min-width: $md-width) {
+                height: 6px;
+            }
+        }
+    }
+}
+
+.flex {
+    display: flex;
+}
+
+img {
+    max-width: 100%;
+    width: auto;
+    display: block;
+}
+
+.h100 {
+    height: 100%;
+}
+
+.trigger {
+    cursor: pointer;
+}
+
+.color-white {
+    color: $white;
+}
+.color-black {
+    color: $black;
+}
+
+/********************************************/
+/********** MIXINS & PLACEHOLDER ************/
+/********************************************/
+
+%full-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+%horizontal-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+%vertical-center {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}

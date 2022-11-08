@@ -1,0 +1,77 @@
+.btn {
+    text-transform: uppercase;
+    font-family: $barlow;
+    font-weight: 600;
+    font-size: 1.3rem;
+    background: $green;
+    height: 45px;
+    line-height: 45px;
+    display: inline-block;
+    position: relative;
+    letter-spacing: 1px;
+    overflow: hidden;
+    @include animated();
+    &:hover {
+        background: $greenDark;
+    }
+    &.btn-fw {
+        width: 100%;
+    }
+    &.btn-green {
+        padding: 0 35px;
+        color: $white;
+    }
+    &.btn-small {
+        height: 30px;
+        line-height: 30px;
+        font-size: 0.9rem;
+        padding: 0 5px;
+        @media (min-width: $md-width) {
+            height: 35px;
+            line-height: 35px;
+            padding: 0 15px;
+            font-size: 1.1rem;
+        }
+    }
+}
+
+.btn-link {
+    color: $green;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    // border-bottom: 3px solid $green;
+    padding-bottom: 5px;
+    @media (min-width: $md-width) {
+        font-size: 1.1rem;
+    }
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        height: 3px;
+        background: $green;
+        left: 0;
+        bottom: -2px;
+        transition: all 0s ease 0s;
+    }
+
+    &:after {
+        width: 100%;
+    }
+    &:before {
+        width: 0;
+    }
+    &:hover {
+        &:after {
+            left: 100%;
+            width: 0;
+            transition: all 0.3s ease 0s;
+        }
+        &:before {
+            width: 100%;
+            transition: all 0.3s ease 0.25s;
+        }
+    }
+}

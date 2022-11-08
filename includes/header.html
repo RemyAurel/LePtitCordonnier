@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Le Ptit Cordonnier <?php if ($page_name != "index") echo "| ".$page_desc; ?></title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    </head>
+    <body class="<?php echo 'page-'.$page_name;?>">
+        <header>
+            <div class="ctn-fluid">
+                
+                <div class="header-mobile hide-md">
+                    <div class="flex top-xxs">
+                        <span class="open-menu">
+                            <i class="icon icon-menu"></i>
+                        </span>
+                        <a href="/index.php" class="logo">
+                            <span class="h2 logo-title">Le P'tit Cordonnier</span>
+                            <span class="logo-subtitle">Depuis 1992</span>
+                        </a>
+                        <a href="/boutiques.php" class="gotostores">
+                            <i class="icon icon-boutique"></i>
+                        </a>
+                    </div>
+                </div>
+                <nav class="flex top-xxs middle-md menu">
+                    <div class="bloc-left xxs12 xs12 md5 lg4">
+                        <ul class="navigation flex top-xxs start-xxs">
+                            <li class="flex middle-xxs menu-item">
+                                <a href="/services.php" class="flex middle-xxs start-xxs menu-link"> 
+                                    <i class="icon icon-marteau hide-xxs show-md"></i>
+                                    <img src="img/menu-mobile/services.png" alt="" class="hide-md">
+                                    <span>Nos services</span> 
+                                    <i class="icon icon-arrow-right hide-md gosub"></i>
+                                </a> 
+                                <div class="submenu">
+                                    <div class="back flex middle-xxs hide-md start-xxs">
+                                        <i class="icon icon-arrow-left"></i>
+                                        <span>Retour</span>
+                                    </div>
+                                    <div class="ctn">
+                                        <div class="flex">
+                                            <div class="xxs12 xs12 md4">
+                                                <a href="/services.php#cordonnerieTrad" class="submenu-bloc">
+                                                    <div class="submenu-img">
+                                                        <img src="img/service1.jpg" alt="">
+                                                    </div>
+                                                    <span>Cordonnerie traditionnelle</span>
+                                                </a>
+                                            </div>
+                                            <div class="xxs12 xs12 md4">
+                                                <a href="/services.php#entretien" class="submenu-bloc">
+                                                    <div class="submenu-img">
+                                                        <img src="img/service2.jpg" alt="">
+                                                    </div>
+                                                    <span>Entretien tous cuirs</span>
+                                                </a>
+                                            </div>
+                                            <div class="xxs12 xs12 md4">
+                                                <a href="/services.php#serviceCle" class="submenu-bloc">
+                                                    <div class="submenu-img">
+                                                        <img src="img/service3.jpg" alt="">
+                                                    </div>
+                                                    <span>Service clés</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="flex middle-xxs menu-item">
+                                <a href="/produits.php" class="flex middle-xxs start-xxs menu-link">
+                                    <i class="icon icon-pschiit hide-xxs show-md"></i>
+                                    <img src="img/menu-mobile/produits.png" alt="" class="hide-md">
+                                    <span>Nos produits</span>
+                                    <small>dispo en boutique</small>
+                                    <i class="icon icon-arrow-right hide-md gosub"></i>
+                                </a>
+                                <div class="submenu">
+                                    <div class="back flex middle-xxs hide-md start-xxs">
+                                        <i class="icon icon-arrow-left"></i>
+                                        <span>Retour</span>
+                                    </div>
+                                    <div class="ctn">
+                                        <div class="flex">
+                                            <div class="xxs12 xs12 md4">
+                                                <a href="/produits.php#chaussures" class="submenu-bloc">
+                                                    <div class="submenu-img">
+                                                        <img src="img/chaussures.jpg" alt="">
+                                                    </div>
+                                                    <span>Chaussures</span>
+                                                </a>
+                                            </div>
+                                            <div class="xxs12 xs12 md4">
+                                                <a href="/produits.php#maroquinerie" class="submenu-bloc">
+                                                    <div class="submenu-img">
+                                                        <img src="img/maroquinerie.jpg" alt="">
+                                                    </div>
+                                                    <span>Petite maroquinerie</span>
+                                                </a>
+                                            </div>
+                                            <div class="xxs12 xs12 md4">
+                                                <a href="/produits.php#entretien" class="submenu-bloc">
+                                                    <div class="submenu-img">
+                                                        <img src="img/entretien.jpg" alt="">
+                                                    </div>
+                                                    <span>Produits d'entretien</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="flex middle-xxs menu-item">
+                                <a href="/atelier.php" class="flex middle-xxs start-xxs menu-link">
+                                    <i class="icon icon-chaussure hide-xxs show-md"></i>
+                                    <img src="img/menu-mobile/atelier.png" alt="" class="hide-md">
+                                    <span>Atelier & savoir-faire</span> 
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bloc-center hide-xxs show-md md lg4 center-xxs">
+                        <a href="/index.php" class="logo">
+                            <span class="h2 logo-title">Le P'tit Cordonnier</span>
+                            <span class="logo-subtitle">Depuis 1992</span>
+                        </a>
+                    </div>
+                    <div class="bloc-right xxs12 xs12 md5 lg4">
+                        <ul class="navigation flex top-xxs start-xxs end-md"> 
+                            <li class="flex middle-xxs menu-item">
+                                <a href="/conseils.php" class="flex middle-xxs start-xxs menu-link">
+                                    <i class="icon icon-conseils hide-xxs show-md"></i>
+                                    <img src="img/menu-mobile/conseils.png" alt="" class="hide-md">
+                                    <span>Nos conseils</span>
+                                </a>
+                            </li>
+                            <li class="flex middle-xxs menu-item">
+                                <a href="/boutiques.php" class="flex middle-xxs start-xxs menu-link">
+                                    <i class="icon icon-boutique hide-xxs show-md"></i>
+                                    <img src="img/menu-mobile/boutiques.png" alt="" class="hide-md">
+                                    <span>Nos boutiques</span>
+                                </a>
+                            </li>
+                            <li class="flex middle-xxs menu-item">
+                                <a href="/contact.php" class="flex middle-xxs start-xxs menu-link">
+                                    <i class="icon icon-bulles hide-xxs show-md"></i>
+                                    <img src="img/menu-mobile/contact.png" alt="" class="hide-md">
+                                    <span>Nous contacter</span>
+                                </a> 
+                            </li> 
+                        </ul>
+                    </div> 
+                </nav>
+            </div>
+        </header>

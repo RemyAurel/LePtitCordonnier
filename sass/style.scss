@@ -1,0 +1,36 @@
+@import "libs/_fonts.scss";
+@import "libs/_variables-sass.scss";
+@import "libs/_mixins-sass.scss";
+@import "libs/_reset-accessibility.scss";
+@import "libs/_reset-base.scss";
+@import "libs/_reset-forms.scss";
+@import "libs/_reset-print.scss";
+@import "libs/_classes.scss";
+@import "libs/_mixins.scss";
+@import "libs/_btn.scss";
+@import "libs/_layout.scss";
+@import "libs/_blocs.scss";
+@import "pages/_index.scss";
+
+body {
+    background: #fff;
+    color: $black;
+    line-height: 1.2;
+}
+p {
+    line-height: 1.3;
+    font-weight: 300;
+    font-size: 1.2rem;
+    @media (min-width: $md-width) {
+        font-size: 1.4rem;
+    }
+    &.spe {
+        font-size: 1.4rem;
+        @media (min-width: $sm-width) {
+            font-size: 1.5rem;
+        }
+        @media (min-width: $md-width) {
+            font-size: 1.6rem;
+        }
+    }
+}
